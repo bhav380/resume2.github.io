@@ -1,0 +1,733 @@
+body{
+	margin:0px;
+}
+
+/*body header*/
+
+#body-header{
+	background-image:url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg");
+	height:65vh;
+    background-size: cover;
+    background-position:center;
+    opacity:0.8;
+
+    background-attachment: fixed;
+}
+
+/*horizontal-list and navigation*/
+.horizontal-list{
+
+	padding-left:0px;
+	list-style:none;
+	margin:0px;
+}
+
+.horizontal-list li{
+	margin: 10px 8px 0px 8px;
+	display:inline-block;
+}
+
+.horizontal-list li a{
+	text-decoration: none;
+	color:white;
+	
+}
+
+.bars{
+	display:none;
+}
+
+.dropdown-menu:hover .dropdown-list{
+	display:block;
+	position:absolute;
+	right:3%;
+}
+
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-list ul a{
+	text-decoration: none;
+	color:white;
+}
+
+
+.dropdown-list li{
+	margin:0.4rem 4px;
+}
+
+.bars i{
+	color:white;
+	font-size:2rem;
+	margin:10px;
+}
+
+
+.dropdown-list{
+	background-color:grey;
+	display:none;
+}
+
+.nav-menu li a{
+	transition:color 0.5s border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+	border-bottom : 1px solid white;
+}
+
+
+.horizontal-list li a:hover{
+	color:lightgrey;
+	
+}
+
+.text-right{
+	text-align:right;
+}
+
+.no-list-style{
+	list-style:none;
+}
+
+.text-center{
+	text-align: center;
+}
+
+
+/*name*/
+
+
+#name-social-container{
+	margin-top:20vh;
+}
+
+#my-name{
+	color:white;
+	font-size:3rem;
+	margin-bottom:0.5rem;
+	font-weight:700;
+}
+
+/*social-icons*/
+
+.social-icons li a i{
+	padding:1rem;
+	font-size:1rem;
+	border-radius:50%;
+}
+
+
+.social-icons li a i:hover{
+	box-shadow:0px 0px 6px 4px rgba(240,196,196,0.3);
+}
+
+
+
+.social-icons li a img {
+    width: 1rem;
+    padding: 8px;
+}
+
+
+/*main section*/
+
+/*my image*/
+
+
+#my-image{
+
+	height:12rem;
+	width:12rem;
+	margin:auto;
+	margin-top:-13vh;
+
+}
+
+
+#my-image img{
+	height:100%;
+	width:100%;
+	border-radius:50%;
+	border : 2px solid white;
+	box-shadow: 0px 0px 4px 4px lightgrey;
+
+
+
+}
+
+
+/*about*/
+#about{
+	height:auto;
+	width:100%;
+	position:relative;
+}
+.style-para{
+	width:40%;
+	text-align:justify;
+	color:grey;
+	margin-bottom:5%;
+	font-size:1.5rem;
+}
+
+.highlight{
+	color:#2857a4;
+}
+
+
+/*sections*/
+
+section{
+
+
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+
+section:nth-child(2n)
+{
+	background-color:lightgrey;
+}
+
+
+
+section:nth-child(2n+1)
+{
+	background-color:white;
+}
+
+
+/*section heading*/
+
+
+.section-heading{
+	position:relative;
+	width:auto;
+	font-weight:400;
+	padding:20px 10px 10px;
+}
+
+.section-heading span{
+	font-size:40px;
+	color:#2857a4;
+	padding-top:10px;
+	margin-right:0.5rem;
+
+}
+
+/*skills*/
+
+
+
+
+.skills-display{
+
+	width:50%;
+	height:inherit;
+	display:flex;
+	margin-top:5%;
+	margin-bottom:5%;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+
+
+}
+
+
+
+
+.skill-progress{
+	width:7rem;
+	height:1.4rem;
+	border-radius: 0.8rem;
+	background-color:grey;
+	margin:20px;
+
+	box-shadow:1px 1px 2px 2px darkgrey;
+}
+
+.seventy-percent{
+	width:70%;
+	height:inherit;
+	
+
+}
+
+.ninety-percent{
+	width:90%;
+	height:inherit;
+}
+
+.eighty-percent{
+	width:80%;
+	height:inherit;
+}
+
+.skill-progress>div{
+	border-radius:20px 0px 0px 20px;
+}
+
+.skill-name span{
+	color:white;
+	margin-left:3px;
+	padding:2px;
+	font-size:1rem;
+
+}
+
+.mb-darkblue{
+	background-color:darkblue;
+}
+
+.mb-orange{
+	background-color: darkorange;
+}
+
+.mb-2DBC78{
+	background-color: #2DBC78;
+
+}
+
+.mb-6F68B2{
+	background-color: #6F68B2;
+}
+
+
+
+/*portfolio*/
+
+.portfolio-display{
+	width:80%;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.portfolio-progress{
+	margin-top:10vh;
+	display:flex;
+	flex-direction:column;
+}
+
+.image1{
+
+
+	
+    height:16vh;
+    width:20vw;
+
+
+}
+
+.image2
+{
+	opacity: 1;
+  display: block;
+ 
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.portfolio-details{
+	position:relative;
+	width:100%;
+	height:100%;
+
+}
+
+
+.middle{
+	display:flex;
+	justify-content: center;
+	align-content:center;
+	transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  margin-top:30%;
+   top :0px;
+   left:0px;
+   width:100%;
+   height:100%;
+  text-align: center;
+}
+
+
+.text {
+  color:white;
+  font-weight: 900;
+  font-size: 1.5vw;
+  overflow-wrap: break-word;
+}
+
+.portfolio-details:hover .image2{
+
+	opacity:1;
+	border:1px solid cyan;
+	background-color: lightgrey;
+}
+
+.portfolio-details:hover .middle{
+	opacity : 1;
+}
+
+
+/*contact*/
+
+.contact-info{
+	overflow-wrap: break-word;
+	width:50%;
+	margin-left:20vw;
+}
+
+.contact-display{
+
+
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+
+
+}
+
+#contact-form{
+	width:40vw;
+	margin-left:5vw;
+}
+
+
+
+section:nth-last-child(1){
+	
+	background-image : linear-gradient(to right,#2857a4,#403066);
+}
+
+.white{
+	color:white;
+}
+
+
+.para{
+	width:25vw;
+	line-height:2vh;
+	height:auto;
+}
+
+
+input,textarea{
+
+    width:0;
+	min-width:100%;
+	background:transparent;
+	border:none;
+	outline:none;
+	color:white;
+	font-size:20px;
+	border-bottom: 2px solid white;
+}
+
+
+button{
+
+
+
+	background:transparent;
+	border:none;
+	color:white;
+	font-size:20px;
+	border:2px solid white;
+	padding:5px;
+}
+
+.grey{
+	color:lightgrey;
+	line-height: 20px;
+}
+
+
+.contact-info span i{
+	color:white;
+}
+
+
+
+.timeline{
+	margin-top:5%;
+	position:relative;
+	width:75%;
+
+}
+
+.timeline-boxes{
+	position:relative;
+	left:5%;
+	min-height:150px;
+	margin:5px;
+	width:40%;
+}
+
+.timeline-boxes:nth-child(2n){
+	left:53%;
+}
+
+
+
+
+
+
+
+
+
+
+
+#experience .timeline .timeline-boxes::before{
+	content:'';
+	display:inline-block;
+	background-image: url("https://cdn.hashnode.com/res/hashnode/image/upload/v1647490619965/P1dsNgj-f1.png");
+	height:60px;
+	width:60px;
+	background-size: cover;
+}
+
+.timeline-divider{
+
+	position:absolute;
+
+	top:15%;
+	left:50%;
+	height:65%;
+	width:0%;
+
+	border:2px dashed #5D8CAE ;
+	
+}
+
+.timeline-traveller{
+	position:sticky;
+	top:30%;
+	z-index:2;
+    transform: rotate(90deg);
+}
+
+.timeline-traveller i{
+
+	color:blue;
+	font-size:3rem;
+
+}
+
+.timeline-boxes:nth-child(2n+1)::after{
+
+	content:'';
+	position : absolute;
+	top:45%;
+	right:-13.5%;
+	height:15px;
+	width:15px;
+	border-radius:50%;
+
+
+	background-color:#95A5A6;
+	z-index:1;
+
+
+
+
+}
+
+
+.timeline-boxes:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-boxes:nth-child(2n)::after{
+
+	content:'';
+	position : absolute;
+	top:45%;
+	left:-9.5%;
+	height:15px;
+	width:15px;
+	border-radius:50%;
+
+
+	background-color: #95A5A6;
+	z-index:1;
+
+
+
+
+}
+
+
+
+
+
+#education .timeline .timeline-boxes::before{
+	content:'';
+	display:inline-block;
+	background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png");
+	height:60px;
+	width:60px;
+	background-size: cover;
+}
+
+
+.heading-timeline-box{
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.first{
+	color:#2857a4;
+	font-size:1.5rem;
+	font-weight:900;
+}
+
+.second{
+	color:#fc9003;
+	font-size:1.3rem;
+	font-weight: 700;
+}
+
+.third{
+	color:grey;
+	font-size:1rem;
+	font-weight:500;
+}
+
+.paragraph{
+	margin-top:4%;
+	text-align: end;
+	text-align:justify;
+	color:grey;
+}
+
+
+/*text-styling*/
+
+.mb75px{
+	border-bottom:75px;
+}
+
+
+
+
+
+@media screen and (max-width:572px){
+	.nav-menu{
+		display:none;
+	}
+
+	.bars{
+		display:block;
+	}
+}
+
+@media screen and (max-width:768px){
+
+	.timeline-divider{
+		left:5%;
+		height:67%;
+	}
+
+
+    .timeline-boxes{
+    	left:12%;
+    	width:80%;
+    }
+
+    .timeline-boxes:nth-child(2n){
+    	left:12%;
+    }
+
+    .timeline-boxes:nth-child(2n)::after{
+    	left:-13.5%;
+    }
+
+    .timeline-boxes:nth-child(2n+1)::after{
+    	left:-13.5%;
+    }
+     
+     html{
+     	font-size:15px;
+     }
+
+     
+
+	.timeline-traveller i{
+
+		color:blue;
+		font-size:2rem;
+
+	}
+
+	.contact-display{
+		flex-direction: column;
+	}
+
+
+	#contact-form{
+		width:80vw;
+		margin-left:5px;
+		margin-top:20vh;
+	}
+
+	.contact-info{
+		width:80vw;
+		margin-left:5px;
+		margin-top:20vh;
+	}
+
+	.para{
+		width:80%;
+	}
+
+	.portfolio-display{
+		flex-direction:column;
+
+	}
+
+
+	.image1{
+			height:40vh;
+			width:60%;
+			margin-left:25%;
+
+	}
+
+
+
+
+
+			
+	.text {
+	  font-size: 1rem;
+	  width:50%;
+	  top:-10%;
+	  left:10%;
+	}
+
+	#my-name{
+		margin-top:1%;
+
+	}
+
+	#name-social-container{
+		margin-top:10%;
+	}
+
+}
+
+
+
